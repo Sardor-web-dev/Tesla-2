@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tesla</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="main_box">
+            <div class="images">
+                <img src="./img/image 1.png" alt="">
+                <div class="disk1 disks">
+                    <img src="./img/tesla.png" alt="">
+                </div>
+                <div class="disk2 disks">
+                    <img src="./img/tesla.png" alt="">
+                </div>
+            </div>
+            <div class="about_car">
+                <div>
+                    <h3>Запас хода</h3>
+                    <h2 id="power">750км</h2>
+                </div>
+                <div>
+                    <h3>Цена</h3>
+                    <h2 id="price">$89, 990</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="params_box">
+            <div class="params_elem">
+                <div>
+                    <span class="title">Скорость автомобиля</span>
+                    <div>
+                        <div class="param">
+                            <span id="speed">60 </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button id="speed__btn" data-action="inc">
+                        <img src="./img/image 3.png" alt="arrow-up">
+                    </button>
+                    <button id="speed__btn" data-action="dec">
+                        <img src="./img/image 4.png" alt="arrow-down">
+                    </button>
+                </div>
+            </div>
+            <div class="params_elem">
+                <div>
+                    <span class="title">Температура за окнами</span>
+                    <div>
+                        <div class="param">
+                            <span id="temp">20</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button id="temp__btn" data-action="inc">
+                        <img src="./img/image 3.png" alt="arrow-up">
+                    </button>
+                    <button id="temp__btn" data-action="dec">
+                        <img src="./img/image 4.png" alt="arrow-down">
+                    </button>
+                </div>
+            </div>
+            <div class="params_elem">
+                <div>
+                    <span class="title">Диски</span>
+                    <div>
+                        <div class="param">
+                            <span id="diskSize">19</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <button id="disk__btn" data-action="inc">
+                        <img src="./img/image 3.png" alt="arrow-up">
+                    </button>
+                    <button id="disk__btn" data-action="dec">
+                        <img src="./img/image 4.png" alt="arrow-down">
+                    </button>
+                </div>
+            </div>
+
+            <div class="params_elem">
+                <div>
+                    <span class="title">Кондиционер</span>
+                    <div class="input">
+                        <label class="switch">
+                            <input id="air" type="checkbox" >
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="params_elem">
+                <div>
+                    <span class="title">Версия Long Range</span>
+                    <div class="switcher" id="version">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="params_elem">
+                <div>
+                    <span class="title">Вид автомобиля</span>
+                    <div class="input" id="view">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

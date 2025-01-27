@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.main_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    position: relative;
+}
+
+.disk1 img {
+    position: absolute;
+    bottom: 37%;
+    left: 25.5%;
+}
+
+.disk2 img {
+    position: absolute;
+    bottom: 37%;
+    right: 26.5%;
+}
+
+.main_box img {
+    max-width: 100%;
+    width: 1240px;
+    height: 697px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.about_car {
+    width: 537px;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    gap: 117px;
+    margin-top: 50px;
+}
+
+.about_car div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about_car h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.26px;
+    text-align: left;
+    color: #707070;
+}
+
+.about_car h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 79.23px;
+}
+
+.params_box {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+}
+
+.params_elem {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+
+    .title {
+        font-size: 14px;
+        color: #707070;
+        font-weight: 500;
+    }
+
+    .param {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        button {
+            width: 22px;
+            height: 22px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .switcher {
+        width: 40px;
+        height: 24px;
+        background-color: #ccc;
+        border-radius: 36px;
+        margin-top: 8px;
+        padding: 3px;
+
+        .circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 36px;
+
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.interior_clr {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    height: 61px;
+    margin-top: 50px;
+}
+
+.clr_option span {
+    color: rgba(112, 112, 112, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.98px;
+}
+
+.clr_option {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    gap: 8px;
+}
+
+.color {
+    display: flex;
+    gap: 10px;
+}
+
+.color div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.black {
+    background-color: #000;
+}
+
+.white {
+    background-color: #e9e7e7;
+}
+
+.beige {
+    background-color: #e3d7c6;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(15px);
+}
+
+.slider.round {
+    border-radius: 36px;
+}
+
+.slider.round:before {
+    width: 18px;
+    height: 18px;
+    border-radius: 36px;
+}
+
+.disks img {
+    width: 113px;
+    height: 90px;
+
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
