@@ -76,7 +76,6 @@ speedBtns.forEach((btn) => {
         }
     }
 });
-
 diskBtns.forEach((btn) => {
     btn.onclick = () => {
         const attr = btn.getAttribute('data-action');
