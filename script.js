@@ -103,12 +103,15 @@ diskBtns.forEach((btn) => {
         reload();
     }
 });
+
 airConditioner.onchange = () => {
+    
     // if (airConditioner.checked) {
     //     basic.powerReserve -= 10;
     // } else {
     //     basic.powerReserve += 10;
     // }
+
     airConditioner.checked ? basic.powerReserve -= 10 : basic.powerReserve += 10;
 
 
